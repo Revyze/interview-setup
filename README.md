@@ -24,3 +24,21 @@ Note: you don't need to setup a mobile emulator, a web navigator works fine for 
 * Flask
 * GraphQL
 
+
+## Running the app
+
+### frontend app
+```
+cd front
+npm run web # or npm run ios
+```
+
+```
+cd back
+uv venv
+source .venv/bin/activate
+uv pip install flask ariadne flask-cors
+python app.py
+```
+
+You can check http://127.0.0.1:5000/graphql to ensure the server is running
