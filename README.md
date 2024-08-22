@@ -27,11 +27,13 @@ Note: you don't need to setup a mobile emulator, a web navigator works fine for 
 
 ## Running the app
 
-### frontend app
+### front
 ```
 cd front
 npm run web # or npm run ios
 ```
+
+### back
 
 ```
 cd back
