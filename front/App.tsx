@@ -1,10 +1,16 @@
-import React from 'react';
-import { ApolloClient, InMemoryCache, ApolloProvider, gql, useQuery } from '@apollo/client';
-import { Text, StyleSheet, View } from "react-native"
-import { StatusBar } from 'expo-status-bar';
+import React from "react";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  gql,
+  useQuery,
+} from "@apollo/client";
+import { Text, StyleSheet, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 const client = new ApolloClient({
-  uri: 'http://127.0.0.1:5000/graphql',
+  uri: "http://127.0.0.1:5000/graphql",
   cache: new InMemoryCache(),
 });
 
@@ -20,7 +26,11 @@ const Hello = () => {
   if (loading) return <Text>Loading...</Text>;
   if (error) return <Text>Error :(</Text>;
 
-  return <View style={styles.container}><Text>{data.hello}</Text></View>;
+  return (
+    <View style={styles.container}>
+      <Text>{data.hello}</Text>
+    </View>
+  );
 };
 
 export default function App() {
@@ -32,15 +42,11 @@ export default function App() {
   );
 }
 
-
-
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

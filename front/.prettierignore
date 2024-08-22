@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+
+dist/*
+build*.tar.gz
+Revyzedev.app
+build*.apk
+build*.aab
+build*.ipa
