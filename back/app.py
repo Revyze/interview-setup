@@ -1,15 +1,15 @@
 from flask import Flask, jsonify, request
-from ariadne import QueryType, make_executable_schema, graphql_sync
+from ariadne import make_executable_schema, graphql_sync
 from ariadne.explorer import ExplorerGraphiQL
+from flask_cors import CORS
 from app.hello import type_defs, query
-
 
 schema = make_executable_schema(type_defs, query)
 
 app = Flask(__name__)
+CORS(app)
 
 
-# Endpoint for GraphQL queries
 @app.route("/graphql", methods=["POST"])
 def graphql_server():
     data = request.get_json()
@@ -20,7 +20,6 @@ def graphql_server():
     return jsonify(result), status_code
 
 
-# Optional: GraphQL Explorer for testing
 @app.route("/graphql", methods=["GET"])
 def graphql_explorer():
     return ExplorerGraphiQL().html(None), 200
