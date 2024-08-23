@@ -9,27 +9,18 @@ This app sends "Hello World" through a graphql python server to a react-native f
 
 Note: you don't need to setup a mobile emulator, a web navigator works fine for the interview.
 
-## The stack
-
-### front-end
-
-* NPM
-* React Native with Expo
-* Apollo GraphQL
-
-### backend
-
-* Python
-* uv
-* Flask
-* GraphQL
-
 
 ## Running the app
+
+### pre-requisite
+
+* Node & npm
+* Python & uv
 
 ### front
 ```
 cd front
+npm i
 npm run web # or npm run ios
 ```
 
