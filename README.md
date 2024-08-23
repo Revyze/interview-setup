@@ -15,7 +15,7 @@ Note: you don't need to setup a mobile emulator, a web navigator works fine for 
 ### Frontend
 
 #### Prerequisites
-* Node
+* Node (installation can be a bit long)
 * npm
 
 #### Running instructions
