@@ -29,8 +29,8 @@ npm run web # or npm run ios
 
 #### Prerequisites
 
-* python 3.9+
-* [uv](https://github.com/astral-sh/uv) (if you don't have python installed, you might want to install python through uv, following the steps here).
+* python >= 3.9
+* [uv](https://github.com/astral-sh/uv) >= 0.2.4 (if you don't have python installed, you might want to install python through uv, following the steps here).
 
 #### Running instructions
 ```
