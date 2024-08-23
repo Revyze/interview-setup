@@ -1,7 +1,7 @@
-# interview
+# Interview set-up
 
 This is the initial state of the repository for the live coding session.
-Its goal is to mimick the core components of our production codebase.
+Its goal is to mimick some of the core components of our production codebase.
 
 If you prefer to use your own environment, please set up this repository and ensure "Hello World" is properly displayed.
 
@@ -12,20 +12,27 @@ Note: you don't need to setup a mobile emulator, a web navigator works fine for 
 
 ## Running the app
 
-### pre-requisite
+### Frontend
 
-* Node & npm
-* Python & uv
+#### Prerequisites
+* Node
+* npm
 
-### front
+#### Running instructions
 ```
 cd front
 npm i
 npm run web # or npm run ios
 ```
 
-### back
+### Backend
 
+#### Prerequisites
+
+* python 3.9+
+* [uv](https://github.com/astral-sh/uv) (if you don't have python installed, you might want to install python through uv, following the steps here).
+
+#### Running instructions
 ```
 cd back
 uv venv
