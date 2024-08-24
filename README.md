@@ -7,7 +7,7 @@ If you prefer to use your own environment, please set up this repository and ens
 
 This app sends "Hello World" through a graphql python server to a react-native frontend.
 
-Note: you don't need to setup a mobile emulator, a web navigator works fine for the interview.
+**Note:** you don't need to setup a mobile emulator, a web navigator should work fine for the interview.
 
 ## Running the app
 
@@ -15,7 +15,7 @@ Note: you don't need to setup a mobile emulator, a web navigator works fine for 
 
 #### Prerequisites
 
-- Node (installation can be a bit long)
+- Node (v16+)
 - npm
 
 #### Running instructions
@@ -42,4 +42,14 @@ source .venv/bin/activate
 python app.py
 ```
 
-You can check http://127.0.0.1:5000/graphql to ensure the server is running
+You can check http://127.0.0.1:5000/graphql to ensure the server is running and http://localhost:8081/ should display "Hello World".
+
+## The technical test
+
+When the technical test starts you will be given access to the test repository.
+
+```
+git remote add test TEST_REPO_URL # replace with provided url
+git fetch --all
+git merge test/main
+```
