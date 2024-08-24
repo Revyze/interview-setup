@@ -20,7 +20,7 @@ This app sends "Hello World" through a graphql python server to a react-native f
 
 #### Running instructions
 
-```
+```sh
 cd front
 npm i
 npm run web # or npm run ios
@@ -35,7 +35,7 @@ npm run web # or npm run ios
 
 #### Running instructions
 
-```
+```sh
 cd back
 uv sync
 source .venv/bin/activate
@@ -48,7 +48,7 @@ You can check http://127.0.0.1:5000/graphql to ensure the server is running and 
 
 When the technical test starts you will be given access to the test repository.
 
-```
+```sh
 git remote add test TEST_REPO_URL # replace with provided url
 git fetch --all
 git merge test/main
