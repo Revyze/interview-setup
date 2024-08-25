@@ -1,8 +1,9 @@
-from flask import Flask, jsonify, request
-from ariadne import make_executable_schema, graphql_sync
+from ariadne import graphql_sync, make_executable_schema
 from ariadne.explorer import ExplorerGraphiQL
+from flask import Flask, jsonify, request
 from flask_cors import CORS
-from app.hello import type_defs, query
+
+from app.entrypoints.base_gql_types import query, type_defs
 
 schema = make_executable_schema(type_defs, query)
 
