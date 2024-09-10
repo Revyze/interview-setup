@@ -24,7 +24,3 @@ def graphql_server():
 @app.route("/graphql", methods=["GET"])
 def graphql_explorer():
     return ExplorerGraphiQL().html(None), 200
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
