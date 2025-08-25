@@ -38,8 +38,7 @@ npm run web # or npm run ios
 ```sh
 cd back
 uv sync
-source .venv/bin/activate
-FLASK_APP=app/entrypoints/flask_app.py FLASK_DEBUG=1 flask run
+FLASK_APP=app/entrypoints/flask_app.py FLASK_DEBUG=1 uv run flask run
 ```
 
 You can check http://127.0.0.1:5000/graphql to ensure the server is running and http://localhost:8081/ should display "Hello World".
