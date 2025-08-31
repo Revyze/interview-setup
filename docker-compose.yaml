@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./back
+      target: build
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - FLASK_APP=app/entrypoints/flask_app.py
+      - FLASK_DEBUG=1
+    develop:
+      watch:
+        - action: sync
+          path: ./back
+          target: /app
+          ignore:
+            - __pycache__/
+        - action: rebuild
+          path: pyproject.toml
