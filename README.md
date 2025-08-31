@@ -33,7 +33,9 @@ npm run web # or npm run ios
 - python >= 3.9
 - [uv](https://github.com/astral-sh/uv) >= 0.3.0 (if you don't have python installed, you might want to install python through uv, following the steps [here](https://docs.astral.sh/uv/guides/install-python/)).
 
-#### Running instructions
+#### Running Instructions
+
+**Locally**
 
 ```sh
 cd back
@@ -41,7 +43,14 @@ uv sync
 FLASK_APP=app/entrypoints/flask_app.py FLASK_DEBUG=1 uv run flask run
 ```
 
-You can check http://127.0.0.1:5000/graphql to ensure the server is running and http://localhost:8081/ should display "Hello World".
+**With Docker**
+Start the service:
+
+```sh
+docker compose up --watch
+```
+
+You can check <http://127.0.0.1:5000/graphql> to ensure the server is running and <http://localhost:8081/> should display "Hello World".
 
 ## The technical test
 
